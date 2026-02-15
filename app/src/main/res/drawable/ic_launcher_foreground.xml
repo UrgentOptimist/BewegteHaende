@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Hand/Fist Icon -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:translateX="0"
+        android:translateY="0">
+        <!-- Palm -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M54,30
+            C42,30 32,42 32,56
+            C32,70 42,82 54,82
+            C66,82 76,70 76,56
+            C76,42 66,30 54,30Z"/>
+        <!-- Thumb up -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M38,50
+            L30,35
+            C28,32 30,28 34,28
+            C38,28 40,32 40,35
+            L42,48Z"/>
+        <!-- Fingers -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M48,32 L46,18 C46,14 50,14 50,18 L50,32Z"/>
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M56,30 L56,14 C56,10 60,10 60,14 L60,30Z"/>
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M64,32 L66,18 C66,14 70,14 70,18 L68,32Z"/>
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M72,38 L78,26 C80,22 84,24 82,28 L74,40Z"/>
+    </group>
+</vector>
