@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#4CAF50">
+    <meta name="description" content="Bewegte Hände - Koordinationstraining für Senioren">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>🤲 Bewegte Hände</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+    <link rel="apple-touch-icon" href="icons/icon-192.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen active">
+        <h1>🤲 Bewegte Hände</h1>
+        <p class="subtitle">Koordinationstraining für fitte Finger</p>
+        
+        <div class="difficulty-section">
+            <h2>Schwierigkeit wählen:</h2>
+            <div class="button-group">
+                <button class="btn btn-easy" onclick="startGame('easy')">
+                    🌱 Leicht
+                </button>
+                <button class="btn btn-medium" onclick="startGame('medium')">
+                    🌿 Mittel
+                </button>
+                <button class="btn btn-hard" onclick="startGame('hard')">
+                    🌳 Schwer
+                </button>
+            </div>
+        </div>
+        
+        <div class="info-box">
+            <p>👆 Machen Sie die gezeigten Handzeichen nach!</p>
+            <p>⏱️ Tippen Sie "Geschafft", wenn Sie fertig sind.</p>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <div class="game-header">
+            <span id="round-display">Runde 1/5</span>
+            <span id="score-display">⭐ 0</span>
+        </div>
+        
+        <div class="exercise-container">
+            <div id="instruction" class="instruction">Zeigen Sie:</div>
+            <div id="hand-emoji" class="hand-emoji">👍</div>
+            <div id="hand-name" class="hand-name">Daumen hoch</div>
+        </div>
+        
+        <div class="timer-container">
+            <div id="timer-bar" class="timer-bar"></div>
+            <span id="timer-text">10</span>
+        </div>
+        
+        <button id="done-btn" class="btn btn-done" onclick="exerciseDone()">
+            ✅ Geschafft!
+        </button>
+        
+        <button class="btn btn-skip" onclick="skipExercise()">
+            ⏭️ Überspringen
+        </button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen">
+        <h1 id="result-title">🎉 Super gemacht!</h1>
+        
+        <div id="stars-display" class="stars-display">
+            ⭐⭐⭐
+        </div>
+        
+        <div class="result-stats">
+            <p><strong>Punkte:</strong> <span id="final-score">0</span></p>
+            <p><strong>Geschafft:</strong> <span id="completed-count">0</span> von <span id="total-count">5</span></p>
+        </div>
+        
+        <div id="motivation" class="motivation">
+            Weiter so! Übung macht den Meister! 💪
+        </div>
+        
+        <div class="button-group">
+            <button class="btn btn-primary" onclick="restartGame()">
+                🔄 Nochmal spielen
+            </button>
+            <button class="btn btn-secondary" onclick="goHome()">
+                🏠 Startseite
+            </button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Register Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(() => console.log('SW registered'))
+                .catch(err => console.log('SW failed:', err));
+        }
+    </script>
+</body>
+</html>

@@ -1,38 +1,4 @@
-# Built application files
-*.apk
-*.ap_
-*.aab
-
-# Files for the ART/Dalvik VM
-*.dex
-
-# Java class files
-*.class
-
-# Generated files
-bin/
-gen/
-out/
-
-# Gradle files
-.gradle/
-build/
-
-# Local configuration file
-local.properties
-
-# Android Studio
-*.iml
-.idea/
 .DS_Store
-
-# NDK
-obj/
-.externalNativeBuild
-
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services
-google-services.json
+Thumbs.db
+*.log
+node_modules/

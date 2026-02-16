@@ -1,64 +1,48 @@
-# 🏋️ FingerFit
+# 🤲 Bewegte Hände
 
-Eine Android-App für Koordinationstraining, speziell entwickelt für Senioren nach leichten Schlaganfällen.
+Eine Progressive Web App (PWA) für Koordinationstraining - speziell entwickelt für Senioren und Menschen in der Rehabilitation.
+
+## 🎮 Jetzt spielen!
+
+**👉 [Hier klicken zum Spielen](https://urgentoptimist.github.io/BewegteHaende/)**
 
 ## 🎯 Features
 
 ### Finger-Training 🤞
-- Verschiedene Handzeichen nachmachen (👍✌️🤙👌🤘 etc.)
-- Training für linke, rechte oder beide Hände
+- Verschiedene Handzeichen nachmachen (👍✌️🤙👌🤘 und mehr)
+- 20 verschiedene Übungen
 - Visuelle Anleitung mit großen Emojis
 
-### Arm-Training 💪
-- Bewegungen mit Armen und Händen
-- Animierte Figur zeigt die Bewegungen
-- Übungen wie: Arme heben, Winken, Klatschen, Kreisen
-
 ### Adaptive Schwierigkeitsstufen
-- 🌱 **Leicht**: Grundlegende Bewegungen, 8-10 Sekunden pro Übung
-- 🌿 **Mittel**: Mehr Übungen, 6-7 Sekunden pro Übung
-- 🌳 **Schwer**: Komplexe Bewegungen, 4-5 Sekunden pro Übung
+- 🌱 **Leicht**: 5 Übungen, 10 Sekunden pro Übung
+- 🌿 **Mittel**: 7 Übungen, 7 Sekunden pro Übung
+- 🌳 **Schwer**: 10 Übungen, 5 Sekunden pro Übung
 
 ### Seniorenfreundliches Design
 - Große, gut lesbare Symbole und Texte
 - Hohe Kontraste
 - Einfache Navigation
 - Positives Feedback und Motivation
+- Punktesystem mit Sternen
 
-## 📱 Screenshots
+### Progressive Web App
+- 📱 Installierbar auf Handy/Tablet
+- 🔌 Funktioniert offline
+- ⚡ Schnell und reaktionsschnell
 
-Die App zeigt:
-1. Startbildschirm mit Schwierigkeitsauswahl
-2. Übungsanzeige mit Timer
-3. Ergebnisbildschirm mit Sternen und Motivation
+## 📱 Installation auf dem Handy
 
-## 🛠️ Technologie
+1. Öffnen Sie die [App im Browser](https://urgentoptimist.github.io/BewegteHaende/)
+2. Tippen Sie auf "Zum Startbildschirm hinzufügen" (oder das ⋮ Menü)
+3. Die App erscheint wie eine normale App auf Ihrem Handy!
 
-- **Kotlin** mit **Jetpack Compose**
-- Material Design 3
-- Keine Kamera oder Bilderkennung nötig
-- Offline nutzbar
-
-## 📋 Installation
-
-1. Repository klonen
-2. In Android Studio öffnen
-3. Gradle sync ausführen
-4. Auf Gerät oder Emulator ausführen
-
-```bash
-git clone https://github.com/[username]/FingerFit.git
-cd FingerFit
-./gradlew assembleDebug
-```
-
-## 🎮 Benutzung
+## 🎮 Spielanleitung
 
 1. **Schwierigkeit wählen** - Beginnen Sie mit "Leicht"
-2. **Trainingsmodus wählen** - Finger oder Arm
-3. **Bewegungen nachmachen** - Folgen Sie den angezeigten Symbolen
-4. **"Geschafft" tippen** - Wenn Sie die Übung gemacht haben
-5. **Punkte sammeln** - Verbessern Sie sich täglich!
+2. **Handzeichen nachmachen** - Folgen Sie den angezeigten Symbolen
+3. **"Geschafft" tippen** - Wenn Sie die Übung gemacht haben
+4. **Punkte sammeln** - Je schneller, desto mehr Punkte!
+5. **Sterne verdienen** - Am Ende jeder Runde
 
 ## ⚠️ Hinweise
 
@@ -66,6 +50,13 @@ cd FingerFit
 - Bei Unsicherheiten Arzt konsultieren
 - Regelmäßiges Training für beste Ergebnisse
 - Qualität vor Geschwindigkeit
+
+## 🛠️ Technologie
+
+- HTML5, CSS3, JavaScript (Vanilla)
+- Progressive Web App (PWA)
+- Service Worker für Offline-Nutzung
+- Keine externen Abhängigkeiten
 
 ## 📄 Lizenz
 

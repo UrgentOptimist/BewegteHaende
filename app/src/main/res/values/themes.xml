@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.FingerFit" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:statusBarColor">#4CAF50</item>
-        <item name="android:navigationBarColor">#4CAF50</item>
-    </style>
-</resources>
